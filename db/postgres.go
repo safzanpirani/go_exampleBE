@@ -4,23 +4,17 @@ import (
 	"fmt"
 	"gin/basic/model"
 	"os"
-
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
-//	func GetPostgresDBConnection() (db *gorm.DB, err error) {
-//		dsn := "host=localhost user=postgres password=postgres dbname=postgres port=5432 sslmode=disable"
-//		db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
-//		return
-//	}
 var PostgresDB *gorm.DB
 
 func GetDBConn() *gorm.DB {
 	return PostgresDB
 }
 func GetPostgresDBConnection() (*gorm.DB, error) {
-	host := os.Getenv("HOST") // 
+	host := os.Getenv("HOST")
 	user := os.Getenv("USER")
 	password := os.Getenv("PASSWORD")
 	dbname := os.Getenv("DBNAME")

@@ -81,7 +81,6 @@ func DeletePostByID(c *gin.Context) {
 }
 
 func CreatePost(c *gin.Context) {
-	//log.Println("*********", c, "*********")
 	var p1 model.Post
 
 	err := c.ShouldBindJSON(&p1)
@@ -129,7 +128,6 @@ func GetPostById(c *gin.Context) {
 
 func UpdatePost(c *gin.Context) {
 
-	// key := c.Params.ByName("id")
 	res := gin.H{
 		"message": "",
 	}

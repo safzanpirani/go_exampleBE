@@ -4,7 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"gin/basic/model"
-
 	"gorm.io/gorm"
 )
 
@@ -13,7 +12,7 @@ func SaveUser(db *gorm.DB, user *model.User) error {
 	return err
 }
 func LogIn(db *gorm.DB, user *model.User) error {
-	//get user by username from db
+	//get user by username from db (see below, superseded)
 	// db.password==user.password
 
 	getUser := model.User{}
