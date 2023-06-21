@@ -9,3 +9,11 @@ First, clone this Git repository:
 ```bash
 git clone https://github.com/safzanpirani/go_exampleBE
 ```
+Move into the newly created directory:
+```bash
+cd go_exampleBE
+```
+Install flyctl in order to host this repository on Fly.io by running:
+```bash
+powershell -Command "iwr https://fly.io/install.ps1 -useb | iex"
+```
