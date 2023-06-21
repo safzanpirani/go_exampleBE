@@ -38,3 +38,48 @@ Note that you must enter each command one by one and let the deployment start ea
 
 After deployment, go to your Fly.io dashboard and find your given hosted link where your deployed project can be accessed.
 We will use Postman utility to interact with this URL.
+
+### JSON Payload as
+{
+  "Id":1, 
+  "Name":"Safzan",
+  "username":"safzanp",
+  "password":"password123"
+}
+
+## Login URL: https://old-sun-5714.fly.dev/login
+### JSON Payload as
+{
+  "username":"safzanp",
+  "password":"password123"
+}
+
+## Get all Posts: 
+### URL: https://old-sun-5714.fly.dev/post
+## Add your JWT Token as a 'token' in the header for successful authentication.
+
+## Delete Post by ID:-
+### URL: https://old-sun-5714.fly.dev/post/1
+### Request Method: DELETE
+
+
+## Add Post:
+### URL: https://old-sun-5714.fly.dev/post
+### Request Method: POST
+### payload json as
+ {  "Id":1,
+    "Name":"Safzan",
+    "Body":"hello!" }
+
+## Get Post by ID:
+### URL: https://old-sun-5714.fly.dev/post/2
+### Request Method: GET
+
+
+## Modify Post Data:
+### URL: https://old-sun-5714.fly.dev/post
+### Request Method: PUT
+### JSON Payload as
+ {  "Id":1,
+    "Name":"Safzan",
+    "Body":"hello!" }
