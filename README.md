@@ -40,19 +40,23 @@ After deployment, go to your Fly.io dashboard and find your given hosted link wh
 We will use Postman utility to interact with this URL.
 
 ### JSON Payload as
+ ```bash
 {
   "Id":1, 
   "Name":"Safzan",
   "username":"safzanp",
   "password":"password123"
 }
+ ```
 
 ## Login URL: https://old-sun-5714.fly.dev/login
 ### JSON Payload as
+ ```bash
 {
   "username":"safzanp",
   "password":"password123"
 }
+ ```
 
 ## Get all Posts: 
 ### URL: https://old-sun-5714.fly.dev/post
@@ -66,10 +70,13 @@ We will use Postman utility to interact with this URL.
 ## Add Post:
 ### URL: https://old-sun-5714.fly.dev/post
 ### Request Method: POST
-### payload json as
+### JSON Payload as
+```bash
  {  "Id":1,
     "Name":"Safzan",
-    "Body":"hello!" }
+    "Body":"hello!" 
+ }
+ ```
 
 ## Get Post by ID:
 ### URL: https://old-sun-5714.fly.dev/post/2
@@ -80,6 +87,8 @@ We will use Postman utility to interact with this URL.
 ### URL: https://old-sun-5714.fly.dev/post
 ### Request Method: PUT
 ### JSON Payload as
+ ```bash
  {  "Id":1,
     "Name":"Safzan",
     "Body":"hello!" }
+	```
