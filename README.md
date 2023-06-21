@@ -4,7 +4,7 @@ This Go [(Golang)](https://go.dev/) backend example project implements a [RESTfu
 ## URL: https://old-sun-5714.fly.dev/
 
 ## Usage
-I used [Fly.io](https://fly.io) to deploy and host this project. You can do the same if you want to host it on your own system.
+I used [Fly.io](https://fly.io) to deploy and host this project. You can do the same if you want to host it on your own.
 First, clone this Git repository:
 ```bash
 git clone https://github.com/safzanpirani/go_exampleBE
@@ -37,4 +37,4 @@ flyctl secrets set USER=~
 Note that you must enter each command one by one and let the deployment start each time. As you enter the final command your deployment should be successful.
 
 After deployment, go to your Fly.io dashboard and find your given hosted link where your deployed project can be accessed.
-We will use Postman to interact with this URL.
+We will use Postman utility to interact with this URL.
