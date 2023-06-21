@@ -20,7 +20,7 @@ func GetDBConn() *gorm.DB {
 	return PostgresDB
 }
 func GetPostgresDBConnection() (*gorm.DB, error) {
-	host := os.Getenv("HOST")
+	host := os.Getenv("HOST") // 
 	user := os.Getenv("USER")
 	password := os.Getenv("PASSWORD")
 	dbname := os.Getenv("DBNAME")
@@ -31,3 +31,10 @@ func GetPostgresDBConnection() (*gorm.DB, error) {
 	PostgresDB = db
 	return db, err
 }
+
+//Fly command line tool configuration for PostgreSQL
+//flyctl secrets set DB_NAME=~
+//flyctl secrets set HOST=postgresql://HOSTNAME_URL
+//flyctl secrets set PASSWORD=~
+//flyctl secrets set USER=~
+
