@@ -62,7 +62,7 @@ We will use Postman utility to interact with this URL.
 ### URL: https://old-sun-5714.fly.dev/post
 ## Add your JWT Token as a 'token' in the header for successful authentication.
 
-## Delete Post by ID:-
+## Delete Post by ID:
 ### URL: https://old-sun-5714.fly.dev/post/1
 ### Request Method: DELETE
 
@@ -72,7 +72,8 @@ We will use Postman utility to interact with this URL.
 ### Request Method: POST
 ### JSON Payload as
 ```bash
- {  "Id":1,
+ {  
+	"Id":1,
     "Name":"Safzan",
     "Body":"hello!" 
  }
@@ -88,7 +89,9 @@ We will use Postman utility to interact with this URL.
 ### Request Method: PUT
 ### JSON Payload as
  ```bash
- {  "Id":1,
+ {  
+	"Id":1,
     "Name":"Safzan",
-    "Body":"hello!" }
+    "Body":"hello!" 	
+ }
 	```
